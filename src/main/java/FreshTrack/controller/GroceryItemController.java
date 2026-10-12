@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/groceries")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:3000", "https://freshtrack-frontend-pi.vercel.app", "https://freshtrack-frontend-pi.vercel.app/", "https://freshtrack-rho.vercel.app"})
 public class GroceryItemController {
 
     private final GroceryItemRepository repository;

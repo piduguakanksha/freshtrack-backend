@@ -33,13 +33,14 @@ build/
 .vscode/
 
 ### Build & Logs ###
+*.log
 hs_err_pid*.log
 replay_pid*.log
 
-### Environment & Secrets ###
+### Environment & Secrets (Never commit secrets) ###
 .env
 .env.*
 !.env.example
 application-local.properties
-src/main/resources/application.properties
-!src/main/resources/application.properties.example
+**/application-local.properties
+src/main/resources/application-local.properties
